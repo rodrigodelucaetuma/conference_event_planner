@@ -135,9 +135,10 @@ const ConferenceEvent = () => {
             totalCost += item.cost * numberOfPeople;
           }
         });
+      }
       return totalCost;
       };
-    }
+  
     
     const venueTotalCost = calculateTotalCost("venue");
     const avTotalCost = calculateTotalCost("av");
@@ -304,7 +305,7 @@ const ConferenceEvent = () => {
                                     ))}
                                 </div>
 
-                                <div className="total_cost">Total Cost: {mealsTotalCost}</div>
+                                <div className="total_cost">Total Cost: ${mealsTotalCost}</div>
 
 
                             </div>
